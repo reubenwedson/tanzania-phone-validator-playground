@@ -1,22 +1,39 @@
-# next-template
+# Tanzania Phone Number Validator Playground
 
-A Next.js 13 template for building apps with Radix UI and Tailwind CSS.
+A Next.js playground for testing the [Tanzania Phone Number Validator](https://github.com/fredygerman/tanzanian-phone-validator) package.
+
+## Demo
+
+Test the package at [https://tanzania-phone-validator-playground.vercel.app/](https://tanzania-phone-validator-playground.vercel.app/)
+
+## Screenshots
+
+![Screenshot 1](https://github.com/fredygerman/tanzanian-phone-validator/blob/main/screenshots/ScreenShot.png?raw=true)
 
 ## Usage
 
+Clone the repo and install dependencies:
+
 ```bash
-npx create-next-app -e https://github.com/shadcn/next-template
+git clone https://github.com/fredygerman/tanzania-phone-validator-playground
 ```
 
-## Features
+Enter the directory :
 
-- Next.js 13 App Directory
-- Radix UI Primitives
-- Tailwind CSS
-- Icons from [Lucide](https://lucide.dev)
-- Dark mode with `next-themes`
-- Tailwind CSS class sorting, merging and linting.
+```bash
+cd tanzania-phone-validator-playground
+```
 
-## License
+Install dependencies:
 
-Licensed under the [MIT license](https://github.com/shadcn/ui/blob/main/LICENSE.md).
+```
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the playground.
