@@ -51,8 +51,8 @@ dependencies:
     specifier: ^1.0.6
     version: 1.0.7(tailwindcss@3.3.3)
   tanzanian-phone-validator:
-    specifier: ^1.0.5
-    version: 1.0.5
+    specifier: ^1.1.4
+    version: 1.1.4
   zod:
     specifier: ^3.22.4
     version: 3.22.4
@@ -3184,8 +3184,8 @@ packages:
     transitivePeerDependencies:
       - ts-node
 
-  /tanzanian-phone-validator@1.0.5:
-    resolution: {integrity: sha512-eNXuvMU9E/ykG3rXuFk8e7nQQ/GBdlkWVtQk5IgegVyK+ORZerGF0gZqZGNOvXbA1l5u527aAToa4v5pzhEs6Q==}
+  /tanzanian-phone-validator@1.1.4:
+    resolution: {integrity: sha512-QBoJzkfDz76Ga7ZFc2R8M6Y1bV1fNluHhHyKCl7vHvJiyTAJxyIW+6Uvq2BeWtPi8JCs3e1nkSOoG37dClFumw==}
     dev: false
 
   /tar-fs@2.1.1:
