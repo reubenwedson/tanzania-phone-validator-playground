@@ -2,7 +2,10 @@
 
 import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
-import { validateTanzanianPhoneNumber } from "tanzanian-phone-validator"
+import {
+  getPhoneNumberDetails,
+  isValidPhoneNumber,
+} from "tanzanian-phone-validator"
 import * as z from "zod"
 
 import { Button } from "@/components/ui/button"
@@ -22,7 +25,7 @@ import { Input } from "../ui/input"
 const FormSchema = z.object({
   phoneNumber: z.string().refine(
     (value) => {
-      return validateTanzanianPhoneNumber(value)
+      return isValidPhoneNumber(value)
     },
     {
       message: "Please enter a valid phone number",
@@ -36,9 +39,14 @@ export function PhoneForm() {
   })
 
   function onSubmit(data: z.infer<typeof FormSchema>) {
+    let phoneNumberDetails = getPhoneNumberDetails(data.phoneNumber)
     let result = {
-      valueSubmitted: data.phoneNumber,
-      isValid: validateTanzanianPhoneNumber(data.phoneNumber),
+      "Phone Number": data.phoneNumber,
+      Prefix: phoneNumberDetails?.telecomCompanyDetails?.prefix ?? "N/A",
+      Company: phoneNumberDetails?.telecomCompanyDetails?.company ?? "N/A",
+      Brand: phoneNumberDetails?.telecomCompanyDetails?.brand ?? "N/A",
+      Operational:
+        phoneNumberDetails?.telecomCompanyDetails?.operational ?? "N/A",
     }
 
     toast({
