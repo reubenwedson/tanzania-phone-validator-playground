@@ -34,6 +34,11 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <>
       <html lang="en" suppressHydrationWarning>
+        <script
+          async
+          src="https://analytics.eu.umami.is/script.js"
+          data-website-id="aacceeec-81b2-43c1-bcbe-0968b3377ad6"
+        />
         <head />
         <body
           className={cn(

@@ -33,6 +33,14 @@ export default function IndexPage() {
           >
             GitHub
           </Link>
+          <Link
+            target="_blank"
+            rel="noreferrer"
+            href={siteConfig.links.analytics}
+            className={buttonVariants({ variant: "outline" })}
+          >
+            Page Analytics
+          </Link>
         </div>
       </section>
 
