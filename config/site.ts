@@ -1,9 +1,9 @@
 export type SiteConfig = typeof siteConfig
 
 export const siteConfig = {
-  name: "Next.js",
+  name: "Tanzania Phone Validator",
   description:
-    "Beautifully designed components built with Radix UI and Tailwind CSS.",
+    "An amazing Blazing fast Tanzania Phone Number Validator Library. ",
   mainNav: [
     {
       title: "Home",
@@ -11,8 +11,8 @@ export const siteConfig = {
     },
   ],
   links: {
-    twitter: "https://twitter.com/shadcn",
-    github: "https://github.com/shadcn/ui",
-    docs: "https://ui.shadcn.com",
+    twitter: "https://twitter.com/fredygerman_",
+    github: "https://github.com/fredygerman/tanzanian-phone-validator",
+    npm: "https://www.npmjs.com/package/tanzanian-phone-validator",
   },
 }
