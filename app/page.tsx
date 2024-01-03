@@ -53,7 +53,9 @@ export default function IndexPage() {
           <h1 className="text-3xl font-extrabold leading-tight tracking-tighter md:text-4xl">
             You can test the validation below
           </h1>
+          <h4 className="mt-6 text-lg font-bold ">Using Zod</h4>
           <PhoneForm />
+          <h4 className="mt-12 text-lg font-bold">Using Yup</h4>
           <PhoneFormUsingYup />
         </div>
       </section>
