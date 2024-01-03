@@ -3,6 +3,7 @@ import Link from "next/link"
 import { siteConfig } from "@/config/site"
 import { buttonVariants } from "@/components/ui/button"
 import { PhoneForm } from "@/components/forms/phone-form"
+import { PhoneFormUsingYup } from "@/components/forms/phone-form-using-yup"
 
 export default function IndexPage() {
   return (
@@ -53,6 +54,7 @@ export default function IndexPage() {
             You can test the validation below
           </h1>
           <PhoneForm />
+          <PhoneFormUsingYup />
         </div>
       </section>
     </>
